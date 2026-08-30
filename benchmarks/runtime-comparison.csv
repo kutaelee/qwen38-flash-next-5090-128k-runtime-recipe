@@ -1,0 +1,13 @@
+lane,server_context,prompt_tokens,prompt_tokens_per_second,completion_tokens,decode_tokens_per_second,result,temperature,seed,notes
+baseline,32768,26253,271.6439,87,16.5306,PASS,0,3407,26K needle retrieval
+baseline,131072,61,17.0200,41,15.2612,PASS,0,3407,short smoke after 128K startup
+baseline,131072,104805,245.7175,76,13.9358,PASS,0,3407,104K needle retrieval
+baseline,131072,41,19.9635,496,20.4535,PASS,0,3407,generic prose median of 3 warm runs
+baseline,131072,59,29.1856,512,22.5055,PASS_WITH_OUTPUT_CAP,0,3407,coding median of 3 warm runs
+baseline,131072,61,50.5329,123,20.7685,PASS,0,3407,edit median of 3 warm runs
+baseline,131072,74,14.5632,327,18.1467,PASS,0,3407,generic agent-tool median of 3 warm runs
+baseline,131072,90,6.3578,106,21.7669,PASS,0,3407,repetition median of 3 warm runs
+mtp-n4,131072,41,19.7700,489,2.5200,REJECTED,0,3407,completed cold generic prose sample
+mtp-n4,131072,41,10.1541,489,3.1376,REJECTED,0,3407,completed warmer generic prose sample
+mtp-n1,131072,NOT_REPORTED,NOT_REPORTED,NOT_REPORTED,0.73-3.58,REJECTED,0,3407,completed short correctness gates; peak VRAM 31775 MiB
+mtp-ngram,131072,NOT_MEASURED,NOT_MEASURED,NOT_MEASURED,NOT_MEASURED,NOT_RUN_BY_GATE,0,3407,MTP prerequisite failed
