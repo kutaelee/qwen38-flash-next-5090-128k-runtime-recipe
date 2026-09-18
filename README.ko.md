@@ -82,6 +82,7 @@ MTP n=4는 정확성 8개 항목을 유지했지만 비교 가능한 일반 pros
 - Baseline decode: 공개 RTX 5090 reference case보다 느림. CPU expert path가 실측상 주요 병목 후보
 - MTP promotion: 이 MXFP4 + 38 CPU-expert path에서 REJECTED
 - Ngram promotion: NOT_RUN_BY_GATE
+- 2026-09-18 IQ4_XS 32K 후속 검증: 테스트한 `ik_llama.cpp` 경로는 정상 완주했지만 CPU-expert offload 상태에서 decode가 약 20~21 tok/s에 머물렀습니다. 공개 upstream `llama.cpp` 사례와의 런타임 차이와 재검증 방법은 [IQ4_XS 32K follow-up](docs/iq4xs-32k-followup-2026-09-18.md)에 기록했습니다.
 
 이 저장소는 재현 가능한 서빙 설정입니다. production coding model 교체를 권장하거나 RTX 5090에서 속도가 최적이라고 주장하지 않습니다.
 
