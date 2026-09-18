@@ -1,0 +1,3 @@
+lane,runtime,server_context,prompt_tokens,completion_tokens,cpu_moe_layers,ttft_ms,prefill_tokens_per_second,decode_tokens_per_second,peak_gpu_util_percent,peak_vram_mib,peak_windows_ram_gb,wsl_available_gib,swap_delta_mib,result,notes
+iq4xs-moe36,ik_llama.cpp-4918-dc310244,32768,23767,1000,36,292364.2,NOT_PRESERVED,20.14,76,22797.0,118.14,85.48,251.41,PASS,"same C++ analysis prompt; finish_reason=length; no OOM or output corruption"
+iq4xs-moe30,ik_llama.cpp-4918-dc310244,32768,23767,1000,30,119364.6,199.2,20.99,100,30309.3,120.40,NOT_PRESERVED,397.95,PASS,"same C++ analysis prompt; finish_reason=length; no OOM or output corruption"
