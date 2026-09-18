@@ -82,6 +82,7 @@ Full instructions: [reproducibility.md](docs/reproducibility.md).
 - Baseline decode speed: below the public 5090 reference cases; CPU expert path is the leading measured bottleneck candidate
 - MTP promotion: REJECTED for this exact MXFP4 + 38 CPU-expert path
 - Ngram promotion: NOT_RUN_BY_GATE
+- 2026-09-18 IQ4_XS 32K follow-up: the tested `ik_llama.cpp` path completed correctly but reached only ~20-21 tok/s decode under heavy CPU-expert offload; the runtime mismatch versus the public upstream `llama.cpp` reference and the one-step reproduction path are recorded in [IQ4_XS 32K follow-up](docs/iq4xs-32k-followup-2026-09-18.md).
 
 This is a reproducible serving recipe, not a recommendation to replace a production coding model or a claim of speed-optimal RTX 5090 inference.
 
